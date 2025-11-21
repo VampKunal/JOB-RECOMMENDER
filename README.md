@@ -28,23 +28,6 @@ Database: placement
 
 Container name: postgres-container
 
-''' 📁 3. Project Folder Structure
-project/
-│── app.py
-│── jobs1.py
-│── companies_data.csv
-│── jobs_info.csv
-│── templates/
-│     ├── welcome.html
-│     ├── login.html
-│     ├── signup.html
-│     ├── viewprofile.html
-│     ├── recommendations.html
-│     ├── recruiter_login.html
-│     ├── dashboard.html
-│     ├── job_postings.html
-│     └── candidates.html
-└── static/ '''
 
 🔧 4. Python Environment Setup
 1️⃣ Create a virtual environment
@@ -81,14 +64,6 @@ It creates recommendations table
 
 It loads companies_data.csv into DB
 
-This happens automatically because of:
-
-if __name__ == '__main__':
-    create_userinfo_table()
-    create_companies_table()
-    create_recommendations_table()
-    load_companies_from_csv()
-    app.run()
 
 ▶️ 7. Running the Flask App
 
@@ -128,18 +103,22 @@ System lists candidates who matched with this company’s job
 
 📊 9. Important Files
 File	Purpose
-companies_data.csv	Loaded into PostgreSQL
-jobs_info.csv	Used by recommendation system
-jobs1.py	Main recommendation logic
-app.py	Entire Flask backend
-🧩 10. Stopping the PostgreSQL Container
-docker stop postgres-container
 
+companies_data.csv	Loaded into PostgreSQL
+
+jobs_info.csv	Used by recommendation system
+
+jobs1.py	Main recommendation logic
+
+app.py	Entire Flask backend
+
+🧩 10. Stopping the PostgreSQL Container
+
+docker stop postgres-container
 
 To start again:
 
 docker start postgres-container
-
 
 To delete completely:
 
