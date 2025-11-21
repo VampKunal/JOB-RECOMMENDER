@@ -28,7 +28,7 @@ Database: placement
 
 Container name: postgres-container
 
-📁 3. Project Folder Structure
+''' 📁 3. Project Folder Structure
 project/
 │── app.py
 │── jobs1.py
@@ -44,7 +44,7 @@ project/
 │     ├── dashboard.html
 │     ├── job_postings.html
 │     └── candidates.html
-└── static/
+└── static/ '''
 
 🔧 4. Python Environment Setup
 1️⃣ Create a virtual environment
